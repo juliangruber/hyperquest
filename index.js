@@ -8,11 +8,11 @@ var Stream = require('stream');
 module.exports = hyperquest;
 
 function bind (obj, fn) {
-  var args = Array.prototype.slice.call(arguments, 2);
-  return function () {
-    args = args.concat(Array.prototype.slice.call(arguments));
-    return fn.apply(obj, args);
-  }
+    var args = Array.prototype.slice.call(arguments, 2);
+    return function () {
+        args = args.concat(Array.prototype.slice.call(arguments));
+        return fn.apply(obj, args);
+    }
 }
 
 function hyperquest (uri, opts, cb, extra) {

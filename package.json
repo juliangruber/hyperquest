@@ -4,11 +4,11 @@
     "description": "make streaming http requests",
     "main": "index.js",
     "dependencies": {
-        "through": "~2.2.0",
-        "duplexer": "~0.0.3"
+        "through": "~2.3.8",
+        "duplexer": "~0.1.1"
     },
     "devDependencies": {
-        "tap": "~0.4.0"
+        "tap": "~8.0.0"
     },
     "scripts": {
         "test": "tap test/*.js"
